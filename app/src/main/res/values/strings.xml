@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Aqua Sentry</string>
+    <string name="app_subtitle">Navigate rising waters with confidence. Real-time alerts, safety protocols, and community support.</string>
+
+    <string name="get_started">Get Started</string>
+    <string name="back_button">Back</string>
+    <string name="close_button">Close</string>
+    <string name="call_now">Call Now</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="menu_button">Menu</string>
+    <string name="notifications">Notifications</string>
+    <string name="recenter_map">Recenter Map to My Location</string>
+    <string name="search_hint">Search for safe zones or evacuation routes</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Alerts</string>
+    <string name="title_safety_tips">Safety Tips</string>
+
+    <string name="feature_alerts_title">Instant Alerts</string>
+    <string name="feature_alerts_subtitle">Get immediate notifications for your area.</string>
+    <string name="feature_safety_title">Safety Protocols</string>
+    <string name="feature_safety_subtitle">Step-by-step guidance to stay safe.</string>
+    <string name="feature_maps_title">Interactive Maps</string>
+    <string name="feature_maps_subtitle">Visualize flood zones and safe routes.</string>
+
+    <string name="perms_title">One Last Step</string>
+    <string name="perms_subtitle">Enable permissions for a safer tomorrow.</string>
+    <string name="perms_location_title">Enable Precise Location</string>
+    <string name="perms_location_desc">For localized alerts and evacuation routes.</string>
+    <string name="perms_notifications_title">Allow Notifications</string>
+    <string name="perms_notifications_desc">Receive critical alerts, even when offline.</string>
+    <string name="btn_enable_location">Enable Location</string>
+    <string name="btn_allow_notifications">Allow Notifications</string>
+    <string name="btn_complete_later">Complete Later</string>
+
+    <string name="status_flood_watch">Flood Dashboard</string>
+    <string name="status_severe_alert">Safety Menu &amp; Watch</string>
+    <string name="alert_zone_title">Hudson River is at critical levels.</string>
+    <string name="alert_evac_advice">Immediate evacuation advised for all low-lying areas.</string>
+
+    <string name="section_measures">Measures</string>
+
+    <string name="title_safety_tips_item">Safety Tips</string>
+    <string name="desc_safety_tips_item">Crucial guidelines for before, during, and after a flood.</string>
+
+    <string name="title_emergency_contacts">Emergency Contacts</string>
+    <string name="desc_emergency_contacts">Instant access to critical national services for immediate assistance.</string>
+    <string name="live_flood_simulation">Live Flood Simulation</string>
+    <string name="press_button_to_check">Press button to check your local risk</string>
+    <string name="check_my_locations_risk">Check My Location\'s Risk</string>
+    <string name="guidance_only_disclaimer">Information provided is for general guidance only. Always follow instructions from local authorities.</string>
+
+    <string name="before_a_flood">Before a Flood</string>
+    <string name="tip_before_1">Know your flood risk and evacuation routes.</string>
+    <string name="tip_before_2">Assemble an emergency kit with food, water, and first aid.</string>
+    <string name="tip_before_3">Secure important documents in a waterproof container.</string>
+    <string name="tip_before_4">Prepare your home by clearing drains and gutters.</string>
+
+    <string name="during_a_flood">During a Flood</string>
+    <string name="tip_during_1">Evacuate immediately if told to do so.</string>
+    <string name="tip_during_2">Move to higher ground. Do not walk or drive through floodwaters.</string>
+    <string name="tip_during_3">Stay informed through official alerts.</string>
+    <string name="tip_during_4">Avoid contact with floodwater as it may be contaminated.</string>
+
+    <string name="after_a_flood">After a Flood</string>
+    <string name="tip_after_1">Return home only when authorities say it is safe.</string>
+    <string name="tip_after_2">Be aware of hazards like damaged power lines and structures.</string>
+    <string name="tip_after_3">Check for any damage to your home before entering.</string>
+    <string name="tip_after_4">Clean and disinfect everything that got wet.</string>
+
+    <string name="map_layers_title">Map Layers</string>
+    <string name="layer_flood_areas">Flood Affected Areas</string>
+    <string name="layer_safe_zones">Safe Zones</string>
+    <string name="layer_evac_routes">Evacuation Routes</string>
+    <string name="collapse_layers">Collapse Layers</string>
+
+    <string name="contacts_header">Emergency Contacts</string>
+    <string name="contacts_national_title">National Emergency Lines</string>
+    <string name="contacts_national_desc">Instant access to critical national services for immediate assistance.</string>
+    <string name="contacts_support_title">Support &amp; Helplines</string>
+    <string name="service_fire">Fire &amp; Rescue</string>
+    <string name="service_ambulance">Ambulance</string>
+    <string name="service_disaster">Disaster Mgmt</string>
+    <string name="service_police">Local Police</string>
+    <string name="service_mental_health">Mental Health Support</string>
+    <string name="service_volunteer">Volunteer Services</string>
+
+    <string name="search_icon">Search Icon</string>
+    <string name="label_location_pin">Location Pin</string>
+    <string name="map_layers_icon">Map Layers Icon</string>
+    <string name="flood_warning_diagram_desc">Red warning house icon over water waves.</string>
+    <string name="back">Back</string>
+
+    <string name="analyzing_data">Analyzing satellite data…</string>
+    <string name="route_calculation_failed">Route calculation failed.</string>
+    <string name="route_danger">DANGER: Route passes through a high-risk flood zone!</string>
+    <string name="route_safe">SAFE: Route appears clear of current flood risks.</string>
+
+</resources>

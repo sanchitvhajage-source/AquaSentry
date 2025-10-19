@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    android:padding="16dp"
+    tools:context=".PermissionsRequestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="32dp"
+        android:paddingBottom="64dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_baseline_waves_24"
+            app:tint="#38BDF8"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Last Step"
+            android:textColor="#F0F6FC"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/manrope"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable permissions for a safer tomorrow."
+            android:textColor="#8B949E"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="@font/manrope"
+            android:layout_marginBottom="48dp"
+            android:paddingHorizontal="16dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#261B22"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_baseline_target_24"
+                        app:tint="#38BDF8"
+                        android:contentDescription="Location Icon"
+                        android:layout_marginEnd="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Enable Precise Location"
+                            android:textColor="#F0F6FC"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/manrope"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="For localized alerts and evacuation routes."
+                            android:textColor="#A0B3C1"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/manrope"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_enable_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enable Location"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_primary"
+                    android:paddingVertical="12dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#261B22"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_baseline_notifications_24"
+                        app:tint="#4ADE80"
+                        android:contentDescription="Notifications Icon"
+                        android:layout_marginEnd="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Allow Notifications"
+                            android:textColor="#F0F6FC"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/manrope"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Receive critical alerts, even when offline."
+                            android:textColor="#A0B3C1"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/manrope"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_allow_notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Allow Notifications"
+                    android:textColor="#1C1C1C"
+                    android:background="@drawable/button_accent"
+                    android:paddingVertical="12dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_continue"  android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete Later"
+            android:layout_marginTop="32dp"
+            android:textColor="#A0B3C1"
+            style="?android:attr/borderlessButtonStyle"
+            android:fontFamily="@font/manrope"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</ScrollView>

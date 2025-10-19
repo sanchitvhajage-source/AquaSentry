@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_layers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bottom_sheet_background"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_layers_24"
+            app:tint="#388bfd"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/map_layers_icon"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Map Layers"
+            android:textColor="#E6EDF3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/manrope"/>
+
+        <ImageButton
+            android:id="@+id/btn_expand_layers"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_expand_less_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="#7D8A97"
+            android:contentDescription="@string/collapse_layers"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Flood Affected Areas" android:textColor="#E6EDF3" android:textSize="16sp" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_flood_areas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:checked="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Safe Zones" android:textColor="#E6EDF3" android:textSize="16sp" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_safe_zones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:checked="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Evacuation Routes" android:textColor="#E6EDF3" android:textSize="16sp" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_evac_routes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:checked="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

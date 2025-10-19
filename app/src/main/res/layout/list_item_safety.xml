@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="8dp"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:background="@drawable/circle_primary_blue_accent"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/icon_safety_item"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_evacuation_24"
+            app:tint="#3B82F6"
+            android:contentDescription="Item Icon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_safety_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evacuation Routes"
+            android:textColor="#E6EDF3"
+            android:textSize="18sp"
+            android:textStyle="bold"  android:fontFamily="@font/manrope"/>
+
+        <TextView
+            android:id="@+id/text_safety_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find the safest path to higher ground"
+            android:textColor="#7D8A97"
+            android:textSize="14sp"
+            android:fontFamily="@font/manrope"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:tint="#7D8A97"
+        android:contentDescription="Navigate"/>
+
+</LinearLayout>
+

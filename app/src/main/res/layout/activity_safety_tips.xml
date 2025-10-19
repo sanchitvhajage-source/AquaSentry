@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1117"
+    tools:context=".SafetyTipsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Safety Tips"
+            app:titleTextColor="#E6EDF3"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#161B22"
+                app:cardCornerRadius="12dp"
+                app:strokeColor="#30363D"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center_horizontal"> <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="#388BFD"
+                    android:visibility="gone" />
+
+                    <com.example.floodalert.FloodLevelView
+                        android:id="@+id/flood_level_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/check_location_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Check My Location's Risk"
+                        app:backgroundTint="#388BFD"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Information provided is for general guidance only. Always follow official advice."
+                        android:textColor="#7D8590"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General Safety Guidelines"
+                android:textColor="#E6EDF3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_before_flood"
+                style="@style/TipCardStyle">
+                <LinearLayout style="@style/TipCardLinearLayout">
+                    <TextView style="@style/TipCardTitle" android:text="Before a Flood"/>
+                    <LinearLayout android:id="@+id/tips_layout_before" style="@style/TipSectionLayout">
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Know your flood risk and evacuation routes."/>
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Assemble a disaster kit with essentials."/>
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Keep important documents in a waterproof container."/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_during_flood"
+                style="@style/TipCardStyle">
+                <LinearLayout style="@style/TipCardLinearLayout">
+                    <TextView style="@style/TipCardTitle" android:text="During a Flood"/>
+                    <LinearLayout android:id="@+id/tips_layout_during" style="@style/TipSectionLayout">
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Move to higher ground immediately."/>
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Do not walk or drive through floodwaters."/>
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Listen to emergency broadcasts for updates."/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_after_flood"
+                style="@style/TipCardStyle">
+                <LinearLayout style="@style/TipCardLinearLayout">
+                    <TextView style="@style/TipCardTitle" android:text="After a Flood"/>
+                    <LinearLayout android:id="@+id/tips_layout_after" style="@style/TipSectionLayout">
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Return home only when authorities say it is safe."/>
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Avoid contact with potentially contaminated floodwater."/>
+                        <TextView style="@style/TipTextStyle" android:text="\u2022 Check for structural damage before entering buildings."/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

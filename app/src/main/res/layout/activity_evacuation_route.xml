@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0E14"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".EvacuationRouteActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#2F81F7" />
+
+        <TextView
+            android:id="@+id/textLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checking flood risk for your location..."
+            android:textColor="#E6EDF3"
+            android:fontFamily="@font/manrope"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutSafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_verified_user_24"
+            app:tint="@color/accent_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Are In a Safe Area"
+            android:textColor="#E6EDF3"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/manrope"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our predictive AI shows no immediate flood risk for your location. No evacuation is necessary."
+            android:textColor="#8B949E"
+            android:fontFamily="@font/manrope"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_warning_24"
+            app:tint="#F85149" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flood Risk Detected"
+            android:textColor="#E6EDF3"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/manrope"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our predictive AI shows a rising flood risk for your location. Please proceed to a safe area."
+            android:textColor="#8B949E"
+            android:fontFamily="@font/manrope"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFindEvacuationRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Safest Route Now"
+        android:backgroundTint="#2F81F7"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/manrope"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

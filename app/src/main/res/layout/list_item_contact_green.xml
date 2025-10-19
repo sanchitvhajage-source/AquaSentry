@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp"
+    android:background="@drawable/list_item_background_hover_green"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/icon_contact_green"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_baseline_healing_24"
+        app:tint="#10b981"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/icon_contact_green"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/text_contact_title_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mental Health Support"
+            android:textColor="#E6F1FF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/manrope"/>
+
+        <TextView
+            android:id="@+id/text_contact_number_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123-456-7894"
+            android:textColor="#8B949E"
+            android:textSize="14sp"
+            android:fontFamily="@font/manrope"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_call_green"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_baseline_call_24"
+        app:tint="#10b981"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="Call Button"/>
+</RelativeLayout>

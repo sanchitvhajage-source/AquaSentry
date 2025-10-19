@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        // Standard repositories for Android plugins
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        // Standard repositories for libraries
+        google()
+        mavenCentral()
+
+        // *** THIS IS THE CRUCIAL FIX ***
+        // This line tells Gradle to look on JitPack for libraries like osmbonuspack.
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "FloodAlert"
+include ':app'
